@@ -1,0 +1,48 @@
+{
+	"name": "Cristian Moreno",
+    "age": "33",
+    "email":"cristian.moreno@gmail.com",
+    "phone":"1234567890",
+    "address":"123 Main St",
+    "city":"New York",
+    "headLine":"Head of Mentors",
+    "link":[
+        {
+        "name":"LinkedIn",
+        "url":"https://www.linkedin.com/in/kriztianmoreno/"
+        
+        },
+    
+        {
+        "name":"GitHub",
+        "url":"https://github.com/kriztianmoreno/"
+        
+        },
+
+        {
+        "name":"Twitter",
+        "url":"https://twitter.com/kriztianmoreno/"
+        }
+            ],
+
+    "website":"https://kriztianmoreno.dev",
+    "skills":[
+        {
+            "name":"JavaScript",
+            "level":"Advanced"
+        },
+        {
+             "name":"React",
+            "level":"Advanced"
+        },
+        {
+             "name":"Node",
+            "level":"Advanced"
+        },
+        {
+             "name":"HTML",
+            "level":"Advanced"
+        }
+
+    ]
+}
