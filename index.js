@@ -48,18 +48,19 @@ app.delete('/api/products/:apiProducts', (req, res) => {
 
 
 app.post('/api/products', (req, res) => {
-    req.body.id = Number((Math.random() * 10000).toFixed(0));
+    req.body.id = Number(1);
     let idFound = false;
-    /*
-    if (apiProducts.map(item => item.id === req.body.id)){
-      console.log(`There's another product with the same id`);
+
+    if(apiProducts.map(item => item.id === req.body.id).includes(true)){
+      console.log(`ERROR: NewProduct has the same ID as one of the already included products`);
       idFound = true;
-    }*/
+    }
+
     if(!req.body.title){
-      console.log(`NewProduct has no TITLE`);
+      console.log(`ERROR: NewProduct has no TITLE`);
     } 
     if (!req.body.price) {
-      console.log(`NewProduct has no PRICE`) 
+      console.log(`ERROR: NewProduct has no PRICE`) 
     } 
     if (req.body.title && req.body.price && idFound === false){
       apiProducts.push(req.body)
